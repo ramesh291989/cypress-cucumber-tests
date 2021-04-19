@@ -1,0 +1,29 @@
+{
+    "devDependencies": {
+        "@cypress/webpack-preprocessor": "^5.7.0",
+        "@testing-library/cypress": "^7.0.5",
+        "@types/cypress-cucumber-preprocessor": "^4.0.0",
+        "babel-loader": "^8.2.2",
+        "cucumber-html-reporter": "5.4.0",
+        "cypress": "^6.6.0",
+        "cypress-cucumber-preprocessor": "^4.0.3",
+        "ts-loader": "^8.1.0",
+        "webpack": "^4.46.0",
+        "multiple-cucumber-html-reporter": "^1.18.0",
+        "typescript": "^4.2.4"
+    },
+    "scripts": {
+        "cypress-open": "cypress open",
+        "cypress": "cypress run",
+        "cypress-html-reporter": "node cypress-cucumber-html-reporter.js"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true,
+        "cucumberJson": {
+            "generate": true,
+            "outputFolder": "cypress/cucumber-json",
+            "filePrefix": "",
+            "fileSuffix": ".cucumber"
+        }
+    }
+}
